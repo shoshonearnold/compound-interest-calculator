@@ -1,6 +1,9 @@
-import CoumpoundInterestCalculator.CompoundInterestCalculator;
+import UserPathDeterminator.PathDeterminator;
+import utils.InputScanner;
 
 void main() {
-    CompoundInterestCalculator Calculator = new CompoundInterestCalculator();
-    Calculator.calculateInterest();
+    PathDeterminator path = new PathDeterminator();
+
+    path.determineUserFinancialNeed();
+    InputScanner.getScan().close();
 }
